@@ -38,7 +38,7 @@ fi
 source upd.sh
 
 # define pacman packages
-pacman_packages="example"
+pacman_packages="digikam jasper"
 
 # install compiled packages using pacman
 if [[ ! -z "${pacman_packages}" ]]; then
@@ -61,8 +61,8 @@ source aur.sh
 cp /home/nobody/novnc-16x16.png /usr/share/webapps/novnc/app/images/icons/
 
 cat <<'EOF' > /tmp/startcmd_heredoc
-# launch example
-/usr/bin/example
+# launch digikam
+/usr/bin/digikam
 EOF
 
 # replace startcmd placeholder string with contents of file (here doc)
@@ -76,9 +76,9 @@ rm /tmp/startcmd_heredoc
 ####
 
 cat <<'EOF' > /tmp/menu_heredoc
-    <item label="Example">
+    <item label="Digikam">
     <action name="Execute">
-      <command>example</command>
+      <command>digikam</command>
       <startupnotify>
         <enabled>yes</enabled>
       </startupnotify>
@@ -97,7 +97,7 @@ rm /tmp/menu_heredoc
 ####
 
 # define comma separated list of paths 
-install_paths="/tmp,/usr/share/themes,/home/nobody,/usr/share/webapps/novnc,/usr/share/example,/usr/share/applications,/etc/xdg"
+install_paths="/tmp,/usr/share/themes,/home/nobody,/usr/share/webapps/novnc,/usr/share/digikam,/usr/share/applications,/etc/xdg"
 
 # split comma separated string into list for install paths
 IFS=',' read -ra install_paths_list <<< "${install_paths}"

@@ -1,14 +1,14 @@
 **Application**
 
-[PyCharm](https://www.jetbrains.com/pycharm/)
+[Example](https://www.example.com/)
 
 **Description**
 
-PyCharm is an Integrated Development Environment (IDE) used in computer programming, specifically for the Python language. It is developed by the Czech company JetBrains.[2] It provides code analysis, a graphical debugger, an integrated unit tester, integration with version control systems (VCSes), and supports web development with Django.
+This domain is for use in illustrative examples in documents. You may use this domain in literature without prior coordination or asking for permission..
 
 **Build notes**
 
-Latest stable PyCharm release from Arch Linux AUR.
+Latest stable Example release from Arch Linux AUR.
 
 **Usage**
 ```
@@ -24,7 +24,7 @@ docker run -d \
     -e UMASK=<umask for created files> \
     -e PUID=<uid for user> \
     -e PGID=<gid for user> \
-    binhex/arch-pycharm
+    redindian/arch-example
 ```
 
 Please replace all user variables in the above command defined by <> with the correct values.
@@ -34,16 +34,16 @@ Please replace all user variables in the above command defined by <> with the co
 docker run -d \
     -p 5900:5900 \
     -p 6080:6080 \
-    --name=pycharm \
-    -v /apps/docker/pycharm:/config \
-    -v /apps/docker/pycharm/projects:/data \
+    --name=example \
+    -v /apps/docker/example:/config \
+    -v /apps/docker/example/projects:/data \
     -v /etc/localtime:/etc/localtime:ro \
     -e WEBPAGE_TITLE=Tower \
     -e VNC_PASSWORD=mypassword \
     -e UMASK=000 \
     -e PUID=0 \
     -e PGID=0 \
-    binhex/arch-pycharm
+    binhex/arch-example
 ```
 
 **Access via web interface (noVNC)**
@@ -74,4 +74,4 @@ If you appreciate my work, then please consider buying me a beer  :D
 
 [![PayPal donation](https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MM5E27UX6AUU4)
 
-[Documentation](https://github.com/binhex/documentation) | [Support forum](https://forums.lime-technology.com/topic/60734-support-binhex-pycharm/)
+[Documentation](https://github.com/binhex/documentation) | [Support forum](https://example.com/)
